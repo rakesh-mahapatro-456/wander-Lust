@@ -79,7 +79,7 @@ It features user authentication, image uploads with **Cloudinary**, location-bas
   <tr>
     <td align="center">
       <b>Home Page</b><br>
-      <img src="<https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png>)" width="300" style="margin:10px"/>
+      <img src="<[https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png](https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png)>)" width="300" style="margin:10px"/>
     </td>
     <td align="center">
       <b>Listing Page</b><br>
