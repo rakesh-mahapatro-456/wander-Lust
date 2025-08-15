@@ -73,10 +73,6 @@ const sessionOptions = {
   },
 };
 
-app.get("/", (req, res) => {
-  res.redirect("/listings");
-});
-
 
 app.use(session(sessionOptions));
 app.use(flash()); //first we have to declare flash before routes so that we can use it in routes
