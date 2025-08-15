@@ -3,7 +3,6 @@
 # 🌍 Wanderlust – Travel Listings Platform
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://wander-lust-90sw.onrender.com/listings)
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/rakesh-mahapatro-456/wander-Lust)
 
 ---
 
@@ -16,17 +15,17 @@ It includes **secure authentication**, **image hosting with Cloudinary**, **loca
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack  
 
-| Technology                                | Purpose                      |
-| ----------------------------------------- | ---------------------------- |
-| [Node.js](https://nodejs.org/)            | Backend runtime              |
-| [Express.js](https://expressjs.com/)      | Web application framework    |
-| [MongoDB](https://www.mongodb.com/)       | NoSQL database               |
-| [Passport.js](http://www.passportjs.org/) | Authentication middleware    |
-| [EJS](https://ejs.co/)                    | Templating engine            |
-| [Bootstrap](https://getbootstrap.com/)    | Responsive styling           |
-| [Cloudinary](https://cloudinary.com/)     | Image hosting & optimization |
+| Technology | Purpose |
+|------------|---------|
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | Backend runtime |
+| ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) | Web application framework |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) | NoSQL database |
+| ![Passport.js](https://img.shields.io/badge/Passport.js-34E1B4?style=for-the-badge&logo=passport&logoColor=white) | Authentication middleware |
+| ![EJS](https://img.shields.io/badge/EJS-611f69?style=for-the-badge&logo=ejs&logoColor=white) | Templating engine |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white) | Responsive styling |
+| ![Cloudinary](https://img.shields.io/badge/Cloudinary-0033cc?style=for-the-badge&logo=cloudinary&logoColor=white) | Image hosting & optimization |
 
 ---
 
