@@ -1,121 +1,148 @@
 
 
-# 🌍 Wanderlust - Travel Listings Platform
+# 🌍 Wanderlust – Travel Listings Platform
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://wander-lust-90sw.onrender.com/listings) 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://wander-lust-90sw.onrender.com/listings)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/rakesh-mahapatro-456/wander-Lust)
 
 ---
 
 ## ✨ Overview
 
-**Wanderlust** is a full-stack **Node.js & Express** travel listings platform for travel enthusiasts. Users can explore, create, and review travel listings with a **responsive interface styled using Bootstrap**.  
+**Wanderlust** is a full-stack **Node.js & Express** travel listings application built for travel enthusiasts.
+Users can **explore, create, and review** travel destinations with an intuitive, **mobile-friendly Bootstrap UI**.
 
-It features user authentication, image uploads with **Cloudinary**, location-based listings using **GeoJSON**, and a review system to share experiences.
+It includes **secure authentication**, **image hosting with Cloudinary**, **location mapping via GeoJSON**, and a **review & rating system** to share travel experiences.
 
 ---
 
 ## 🛠 Tech Stack
 
-[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/) 
-[![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)](https://expressjs.com/) 
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)  
-[![Passport](https://img.shields.io/badge/Passport.js-34E1B4?logo=passport.js&logoColor=white)](http://www.passportjs.org/)  
-[![EJS](https://img.shields.io/badge/EJS-611f69?logo=ejs&logoColor=white)](https://ejs.co/)  
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-563d7c?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)  
-[![Cloudinary](https://img.shields.io/badge/Cloudinary-0033cc?logo=cloudinary&logoColor=white)](https://cloudinary.com/)
+| Technology                                | Purpose                      |
+| ----------------------------------------- | ---------------------------- |
+| [Node.js](https://nodejs.org/)            | Backend runtime              |
+| [Express.js](https://expressjs.com/)      | Web application framework    |
+| [MongoDB](https://www.mongodb.com/)       | NoSQL database               |
+| [Passport.js](http://www.passportjs.org/) | Authentication middleware    |
+| [EJS](https://ejs.co/)                    | Templating engine            |
+| [Bootstrap](https://getbootstrap.com/)    | Responsive styling           |
+| [Cloudinary](https://cloudinary.com/)     | Image hosting & optimization |
 
 ---
 
-## 🌟 Key Features
+## 🌟 Features
 
 ### 🔐 User Authentication
-- Secure registration, login, and logout  
-- Password hashing via Passport-Local-Mongoose  
-- Persistent sessions with secure cookies  
+
+* Register, login, and logout securely
+* Password hashing with **Passport-Local-Mongoose**
+* Persistent sessions with secure cookies
 
 ### 🏞 Listings Management
-- Create, read, update, and delete listings  
-- Image uploads via Cloudinary  
-- Location-based data with GeoJSON  
-- Search & filter listings  
 
-### ✍️ Reviews System
-- Leave ratings and comments  
-- Reviews linked to both users and listings  
-- Automatic cleanup of orphaned reviews  
+* Create, view, update, and delete travel listings
+* Upload multiple images via **Cloudinary**
+* Store geolocation data using **GeoJSON**
+* Search & filter listings by location or name
+
+### ✍️ Review System
+
+* Leave ratings & comments on listings
+* Link reviews to both users & listings
+* Auto-delete orphaned reviews
 
 ---
 
-## 🗃 Data Models
+## 📂 Data Models
 
 **Listing**
-- Title, description, price  
-- Location & country  
-- Cloudinary image URLs  
-- GeoJSON coordinates  
-- References to owner & reviews  
+
+* Title, description, price
+* Location & country
+* Cloudinary image URLs
+* GeoJSON coordinates
+* References to owner & reviews
 
 **Review**
-- Rating & comment  
-- References to author & listing  
+
+* Rating & comment
+* References to author & listing
 
 **User**
-- Username & hashed password  
-- References to owned listings & reviews  
+
+* Username & hashed password
+* References to owned listings & reviews
 
 ---
 
-## 🔒 Security Features
-- Environment variables for sensitive data  
-- CSRF protection & input validation with **Joi**  
-- Secure session cookies  
-- Safe file upload handling  
+## 🔒 Security Highlights
 
+* Environment variables for sensitive credentials
+* **Joi** for input validation
+* CSRF protection
+* Secure cookie handling
+* Safe file upload processing
+
+---
 
 ## 📸 Screenshots
 
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Home Page</b><br>
-    <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png" width="300" style="margin:10px"/>
-    </td>
-    <td align="center">
-      <b>Listing Page</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300" style="margin:10px"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Listing Map</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.57_rlj7pw.png" width="300" style="margin:10px"/>
-    </td>
-    <td align="center">
-      <b>Review Section</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253143/Screenshot_2025-08-15_at_15.44.33_vovlhe.png" width="300" style="margin:10px"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Review & Map</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253151/Screenshot_2025-08-15_at_15.44.51_w9upey.png" width="300" style="margin:10px"/>
-    </td>
-    <td align="center">
-      <b>New Listing</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253147/Screenshot_2025-08-15_at_15.42.43_xihets.png" width="300" style="margin:10px"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Edit Listing</b><br>
-      <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.43.54_qlyn8j.png" width="300" style="margin:10px"/>
-    </td>
-    <td></td>
-  </tr>
-</table>
+| Home Page                                                                                                                           | Listing Page                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> |
+
+| Listing Map                                                                                                                         | Review Section                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.57_rlj7pw.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253143/Screenshot_2025-08-15_at_15.44.33_vovlhe.png" width="300"/> |
+
+| Review & Map                                                                                                                        | New Listing                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253151/Screenshot_2025-08-15_at_15.44.51_w9upey.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253147/Screenshot_2025-08-15_at_15.42.43_xihets.png" width="300"/> |
+
+| Edit Listing                                                                                                                        |   |
+| ----------------------------------------------------------------------------------------------------------------------------------- | - |
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.43.54_qlyn8j.png" width="300"/> |   |
 
 </div>
- 
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/rakesh-mahapatro-456/wander-Lust.git
+cd wander-Lust
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Set Environment Variables
+
+Create a `.env` file in the root with:
+
+```
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_KEY=your_key
+CLOUDINARY_SECRET=your_secret
+MAPBOX_TOKEN=your_mapbox_token
+DB_URL=mongodb://localhost:27017/wanderlust
+SECRET=your_session_secret
+```
+
+### 4️⃣ Run the Application
+
+```bash
+npm start
+```
+
+App runs on **[http://localhost:3000](http://localhost:3000)**
+
+
