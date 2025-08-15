@@ -91,7 +91,7 @@ It includes **secure authentication**, **image hosting with Cloudinary**, **loca
 
 | Home Page                                                                                                                           | Listing Page                                                                                                                        |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.31.26_l0mrrn.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> |
+|  <img src="https://drive.google.com/uc?export=view&id=1kb-w1Sl8WPP7XcmmxNW4xF2ZzsCTa06a" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> |
 
 | Listing Map                                                                                                                         | Review Section                                                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -142,7 +142,5 @@ SECRET=your_session_secret
 ```bash
 npm start
 ```
-
-App runs on **[http://localhost:3000](http://localhost:3000)**
 
 
