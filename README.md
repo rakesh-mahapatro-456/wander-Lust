@@ -1,145 +1,209 @@
-
-
-# 🌍 Wanderlust – Travel Listings Platform
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://wander-lust-90sw.onrender.com/listings)
-
----
-
-## ✨ Overview
-
-**Wanderlust** is a full-stack **Node.js & Express** travel listings application built for travel enthusiasts.
-Users can **explore, create, and review** travel destinations with an intuitive, **mobile-friendly Bootstrap UI**.
-
-It includes **secure authentication**, **image hosting with Cloudinary**, **location mapping via GeoJSON**, and a **review & rating system** to share travel experiences.
-
----
-
-## 🛠 Tech Stack  
-
-| Technology | Purpose |
-|------------|---------|
-| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | Backend runtime |
-| ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) | Web application framework |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) | NoSQL database |
-| ![Passport.js](https://img.shields.io/badge/Passport.js-34E1B4?style=for-the-badge&logo=passport&logoColor=white) | Authentication middleware |
-| ![EJS](https://img.shields.io/badge/EJS-611f69?style=for-the-badge&logo=ejs&logoColor=white) | Templating engine |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white) | Responsive styling |
-| ![Cloudinary](https://img.shields.io/badge/Cloudinary-0033cc?style=for-the-badge&logo=cloudinary&logoColor=white) | Image hosting & optimization |
-
----
-
-## 🌟 Features
-
-### 🔐 User Authentication
-
-* Register, login, and logout securely
-* Password hashing with **Passport-Local-Mongoose**
-* Persistent sessions with secure cookies
-
-### 🏞 Listings Management
-
-* Create, view, update, and delete travel listings
-* Upload multiple images via **Cloudinary**
-* Store geolocation data using **GeoJSON**
-* Search & filter listings by location or name
-
-### ✍️ Review System
-
-* Leave ratings & comments on listings
-* Link reviews to both users & listings
-* Auto-delete orphaned reviews
-
----
-
-## 📂 Data Models
-
-**Listing**
-
-* Title, description, price
-* Location & country
-* Cloudinary image URLs
-* GeoJSON coordinates
-* References to owner & reviews
-
-**Review**
-
-* Rating & comment
-* References to author & listing
-
-**User**
-
-* Username & hashed password
-* References to owned listings & reviews
-
----
-
-## 🔒 Security Highlights
-
-* Environment variables for sensitive credentials
-* **Joi** for input validation
-* CSRF protection
-* Secure cookie handling
-* Safe file upload processing
-
----
-
-## 📸 Screenshots
-
 <div align="center">
 
-| Home Page                                                                                                                           | Listing Page                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-|  <img src="https://drive.google.com/uc?export=view&id=1kb-w1Sl8WPP7XcmmxNW4xF2ZzsCTa06a" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> |
+```
+██╗    ██╗ █████╗ ███╗   ██╗██████╗ ███████╗██████╗ ██╗     ██╗   ██╗███████╗████████╗
+██║    ██║██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗██║     ██║   ██║██╔════╝╚══██╔══╝
+██║ █╗ ██║███████║██╔██╗ ██║██║  ██║█████╗  ██████╔╝██║     ██║   ██║███████╗   ██║
+██║███╗██║██╔══██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗██║     ██║   ██║╚════██║   ██║
+╚███╔███╔╝██║  ██║██║ ╚████║██████╔╝███████╗██║  ██║███████╗╚██████╔╝███████║   ██║
+ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝
+```
 
-| Listing Map                                                                                                                         | Review Section                                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.57_rlj7pw.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253143/Screenshot_2025-08-15_at_15.44.33_vovlhe.png" width="300"/> |
+**MVC travel listings platform — geospatial data, image pipeline, session auth**
 
-| Review & Map                                                                                                                        | New Listing                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253151/Screenshot_2025-08-15_at_15.44.51_w9upey.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253147/Screenshot_2025-08-15_at_15.42.43_xihets.png" width="300"/> |
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Passport.js](https://img.shields.io/badge/Passport.js-34E1B4?style=flat-square&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-0033cc?style=flat-square&logo=cloudinary&logoColor=white)
 
-| Edit Listing                                                                                                                        |   |
-| ----------------------------------------------------------------------------------------------------------------------------------- | - |
-| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.43.54_qlyn8j.png" width="300"/> |   |
+🌐 **[Live Demo](https://wander-lust-90sw.onrender.com/listings)**
 
 </div>
 
 ---
 
-## 🚀 Getting Started
+## `$ cat overview.txt`
 
-### 1️⃣ Clone the Repository
+Wanderlust is a full-stack MVC travel listings app. Built around clean server-rendered patterns with geospatial data storage via LocationIQ geocoding, a Cloudinary image upload pipeline, Passport-Local-Mongoose session auth, and referential integrity through cascading deletes.
+
+```
+  POST /listings  →  Joi validation → Cloudinary upload → LocationIQ geocode
+                                              │
+                              ┌───────────────┴───────────────┐
+                        image { url, filename }          GeoJSON coords
+                        stored in MongoDB                stored in MongoDB
+                              │                                │
+                        served via CDN               MapLibre + MapTiler
+                                                      renders map on page
+```
+
+---
+
+## `$ cat features.txt`
+
+### 🔐 Authentication (Passport-Local-Mongoose)
+```
+POST /signup    →  create user + hash password
+POST /login     →  validate + create session (secure cookie)
+GET  /logout    →  destroy session
+
+Session middleware on every protected route
+Unauthorized   → redirect to /login
+```
+
+### 🏞 Listings (Full CRUD)
+```
+GET    /listings       →  all listings
+GET    /listings/:id   →  single listing + map
+POST   /listings       →  create (auth required + Joi validation)
+PUT    /listings/:id   →  update (owner only)
+DELETE /listings/:id   →  delete + cascade reviews (owner only)
+```
+
+### 📍 Geospatial Data
+```
+Create listing → LocationIQ geocoding API → GeoJSON coordinates
+                                                  │
+                                       stored in MongoDB
+                                                  │
+                              rendered as interactive map
+                              via MapLibre GL + MapTiler tiles
+```
+
+### 🖼 Cloudinary Image Pipeline
+```
+Upload form → multer-storage-cloudinary (single image)
+                          │
+              { url, filename } → MongoDB
+                          │
+              served via Cloudinary CDN
+```
+
+### ✍️ Review System
+```
+POST   /listings/:id/reviews            →  add review (auth required)
+DELETE /listings/:id/reviews/:reviewId  →  delete (author only)
+
+Cascade: listing deleted → all linked reviews auto-removed
+         (referential integrity via Mongoose middleware)
+```
+
+### 📊 Data Models
+```
+Listing
+  ├── title, description, price
+  ├── location, country
+  ├── image: { url, filename }   ← Cloudinary (single image)
+  ├── geometry: GeoJSON          ← LocationIQ coords
+  ├── owner: ref → User
+  └── reviews: [ref → Review]
+
+Review
+  ├── rating, comment
+  └── author: ref → User
+
+User
+  ├── username, email
+  └── hash + salt (Passport-Local-Mongoose)
+```
+
+---
+
+## `$ cat stack.txt`
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│  BACKEND                                                        │
+│  Node.js · Express              →  MVC server (port 8080)     │
+│  MongoDB + Mongoose             →  data modeling               │
+│  Passport-Local-Mongoose        →  session auth                │
+│  multer-storage-cloudinary      →  image upload pipeline       │
+│  LocationIQ API                 →  geocoding → GeoJSON         │
+│  Joi                            →  input validation            │
+│  EJS                            →  server-side templating      │
+│                                                                 │
+│  FRONTEND                                                       │
+│  Bootstrap    →  responsive UI                                 │
+│  MapLibre GL  →  interactive listing maps                      │
+│  MapTiler     →  map tiles                                     │
+│                                                                 │
+│  DEPLOYMENT                                                     │
+│  App + DB  →  Render + MongoDB Atlas                           │
+│  Images    →  Cloudinary CDN                                   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## `$ ls -la screenshots/`
+
+<div align="center">
+
+| Home | Listing |
+|---|---|
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.37_gbw3hk.png" width="300"/> |
+
+| Map | Reviews |
+|---|---|
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253146/Screenshot_2025-08-15_at_15.31.57_rlj7pw.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253143/Screenshot_2025-08-15_at_15.44.33_vovlhe.png" width="300"/> |
+
+| New Listing | Edit Listing |
+|---|---|
+| <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253147/Screenshot_2025-08-15_at_15.42.43_xihets.png" width="300"/> | <img src="https://res.cloudinary.com/dqz5xgr5v/image/upload/v1755253144/Screenshot_2025-08-15_at_15.43.54_qlyn8j.png" width="300"/> |
+
+</div>
+
+---
+
+## `$ cat security.txt`
+
+```
+✓  Passport-Local-Mongoose   →  password hash + salt, no plaintext
+✓  Session cookies            →  httpOnly: true
+✓  Joi validation             →  listing + review write routes validated
+✓  Owner-only mutations      →  edit/delete guarded by authorship check
+⚠  Environment variables      →  intended via .env — remove hardcoded
+                                  credentials in init/index.js before deploy
+```
+
+---
+
+## `$ cat setup.txt`
 
 ```bash
 git clone https://github.com/rakesh-mahapatro-456/wander-Lust.git
 cd wander-Lust
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
 npm install
 ```
 
-### 3️⃣ Set Environment Variables
-
-Create a `.env` file in the root with:
-
-```
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_KEY=your_key
-CLOUDINARY_SECRET=your_secret
-MAPBOX_TOKEN=your_mapbox_token
-DB_URL=mongodb://localhost:27017/wanderlust
+Create `.env`:
+```env
+ATLASDB_URL=your_mongodb_atlas_url
 SECRET=your_session_secret
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
+LOCATIONIQ_API_KEY=your_locationiq_key
+MAPTILER_API_KEY=your_maptiler_key
 ```
-
-### 4️⃣ Run the Application
 
 ```bash
-npm start
+node app.js
+# App running at http://localhost:8080
+# (or add "start": "node app.js" to package.json scripts)
 ```
 
+---
 
+<div align="center">
+
+```
+$ echo $BUILT_WITH
+  Node.js · Express · MongoDB · Passport.js · Cloudinary · LocationIQ · MapLibre
+  Built with ❤️
+```
+
+</div>
